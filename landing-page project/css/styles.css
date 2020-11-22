@@ -1,0 +1,75 @@
+body {
+    background-color: chocolate;
+    text-align: center;
+}
+
+h1 {
+    font-weight: bolder;
+}
+
+p {
+    font-size: 13pt;
+}
+
+section{
+    margin: 30px 30px;
+    text-align: center;
+    padding: 10px;
+}
+
+.secActive{
+    background-color: rgb(99, 161, 141);
+    border-radius: 20px;
+}
+
+.header {
+    background: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: chocolate;
+    font-size: 15pt;
+    display: block;
+    transition: top 0.3s;
+}
+
+li {
+    list-style-type: none;
+    float:left;
+    display: block;
+    padding: 14px;
+}
+
+li:hover {
+    background-color: rgb(219, 219, 219);
+}
+
+.secSelect {
+    color: rgb(99, 161, 141);
+}
+
+#footer {
+    color: chocolate;
+    padding: 14px 16px;
+    background: rgb(0, 0, 0);
+    width: 100%;
+    font-size: 15pt;
+    display: flex;
+    float: left;
+}
+
+#btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right:30px;
+    z-index: 99;
+    background-color: rgb(219, 219, 219);
+    color: rgb(99, 161, 141);
+    border-radius: 15px;
+    font-size: 15pt;
+}
+
+#btn:hover {
+    background-color: chocolate;
+}

@@ -28,17 +28,16 @@ sections.forEach(function(section){//loop to create list,anchor and text node
 navUL.appendChild(fragment);//fragment inside the unordered list
 
 
-let prePos = window.pageXOffset;//trying to make the header disappear but still
-window.onscroll = function(){
+let prePos = window.pageYOffset;//trying to make the header disappear but still
+document.addEventListener('scroll',function(){
     let curPos = window.pageYOffset;
     if (prePos > curPos) {
         document.getElementById('header').style.top = '0';
     }else{
-        document.getElementById('header').style.top = '-50px';
-
+        document.getElementById('header').style.top = '-25px';
     }
     prePos = curPos;
-}
+})
 
 
 let button = document.getElementById('btn');//back to top button
